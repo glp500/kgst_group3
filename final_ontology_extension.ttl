@@ -1,0 +1,1695 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix conceptnet: <https://api.conceptnet.io/c/en/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix ns1: <https://github.com/EliasLiinamaa/kgst_project_group_3/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
+
+hi:Adaptiveness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Adult a hi:Human,
+        owl:NamedIndividual .
+
+hi:BDI a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Child a hi:Human,
+        owl:NamedIndividual .
+
+hi:Collaboration-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Collaborativeness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Communication a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Contribution-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Designer a hi:Human,
+        owl:NamedIndividual .
+
+hi:Explainability a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Generating a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Hybrid a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Intelligent_System a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Learning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Multimodal a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Neuro-symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Non-cooperative a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Question-Answering a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Reasoning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Recommendation a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Responsibility a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Robot a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Single-agent a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Statistical a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Teacher a hi:Human,
+        owl:NamedIndividual .
+
+hi:Transforming a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Transparency a hi:Capability,
+        owl:NamedIndividual .
+
+hi:capability a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability .
+
+hi:context a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:domain a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:endgoal a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Endgoal .
+
+hi:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalConsideration .
+
+hi:inScenario a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Scenario ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:informationMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:interactingAgent a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:Actor .
+
+hi:interactionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionMethod .
+
+hi:interactionTask a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionTask .
+
+hi:processingTask a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingTask .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA220187> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "HyEnA: A Hybrid Method for Extracting Arguments from Opinions" ;
+    dcterms:title "HyEnA: A Hybrid Method for Extracting Arguments from Opinions" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA220187> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA230073> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Human Factors in Interactive Online Machine Learning" ;
+    dcterms:title "Human Factors in Interactive Online Machine Learning" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA230073> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA230080> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Visualizing Deep Neural Networks with Topographic Activation Maps" ;
+    dcterms:title "Visualizing Deep Neural Networks with Topographic Activation Maps" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA230080> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA230090> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Design of a Human-in-the-Loop Centered AI-Based Clinical Decision Support System for Professional Care Planning" ;
+    dcterms:title "Design of a Human-in-the-Loop Centered AI-Based Clinical Decision Support System for Professional Care Planning" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA230090> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA230097> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Co-Performing Music with AI: Real-Time Performance Control Using Speech and Gestures" ;
+    dcterms:title "Co-Performing Music with AI: Real-Time Performance Control Using Speech and Gestures" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA230097> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA230099> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Towards Robots at Meet Users’ Need for Explanation" ;
+    dcterms:title "Towards Robots at Meet Users’ Need for Explanation" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA230099> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA240179> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Formal Specification of Actual Trust in Multiagent Systems" ;
+    dcterms:title "Formal Specification of Actual Trust in Multiagent Systems" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA240179> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA240187> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "EASY-AI: sEmantic And compoSable glYphs for representing AI systems" ;
+    dcterms:title "EASY-AI: sEmantic And compoSable glYphs for representing AI systems" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA240187> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/FAIA240201> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Common Ground Provides a Mental Shortcut in Agent-Agent Interaction" ;
+    dcterms:title "Common Ground Provides a Mental Shortcut in Agent-Agent Interaction" ;
+    owl:sameAs <https://doi.org/10.3233/FAIA240201> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/N0a31ea0aab264d2eb83d6459bd9588dc_processing_information_https:/github.com/EliasLiinamaa/kgst_project_group_3/Multi-modal_Interaction> a rdf:Statement ;
+    hi:informationMethod ns1:Intent_Extraction,
+        ns1:Speech_Recognition,
+        ns1:Video_Analysis ;
+    rdf:object ns1:Multi-modal_Interaction ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <N0a31ea0aab264d2eb83d6459bd9588dc> ;
+    ns1:metric ns1:Interaction_Quality,
+        ns1:User_Intent_Understanding .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/N11f893214512447489651429b6f729c8_processing_information_https:/github.com/EliasLiinamaa/kgst_project_group_3/Interactive_Learning> a rdf:Statement ;
+    hi:informationMethod ns1:Feedback-based_Optimization,
+        ns1:User_Data_Collection ;
+    rdf:object ns1:Interactive_Learning ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <N11f893214512447489651429b6f729c8> ;
+    ns1:metric ns1:Model_Improvement,
+        ns1:Personalization .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/N37f5dc59b1824712973839b20c081eac_processing_information_https:/github.com/EliasLiinamaa/kgst_project_group_3/Error_Detection> a rdf:Statement ;
+    hi:informationMethod ns1:Comparative_Analysis ;
+    rdf:object ns1:Error_Detection ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <N37f5dc59b1824712973839b20c081eac> ;
+    ns1:metric ns1:Error_Identification .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/N38cebdb450b74c32b727312192a09bbc_processing_information_https:/github.com/EliasLiinamaa/kgst_project_group_3/Representation_Visualization> a rdf:Statement ;
+    hi:informationMethod ns1:Dimensionality_Reduction,
+        ns1:Force-based_Layout ;
+    rdf:object ns1:Representation_Visualization ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <N38cebdb450b74c32b727312192a09bbc> ;
+    ns1:metric ns1:Topographic_Map .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Data_Structuring> a rdf:Statement ;
+    hi:informationMethod ns1:Data_Modeling ;
+    rdf:object ns1:Data_Structuring ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS> ;
+    ns1:metric ns1:Structured_Case_Database .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Federated_Learning> a rdf:Statement ;
+    hi:informationMethod ns1:Distributed_Machine_Learning ;
+    rdf:object ns1:Federated_Learning ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS> ;
+    ns1:metric ns1:Privacy-Preserving_Models .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/NLP_Analysis> a rdf:Statement ;
+    hi:informationMethod ns1:Named_Entity_Recognition,
+        ns1:Text_Classification ;
+    rdf:object ns1:NLP_Analysis ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS> ;
+    ns1:metric ns1:Data_Relevance_Assessment,
+        ns1:Structured_Data .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Clustering> a rdf:Statement ;
+    hi:informationMethod ns1:Graph_Clustering ;
+    rdf:object ns1:Clustering ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System> ;
+    ns1:metric ns1:Key_Arguments .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Intelligent_Merging> a rdf:Statement ;
+    hi:informationMethod ns1:POWER_Algorithm,
+        ns1:Pareto_Dependency ;
+    rdf:object ns1:Intelligent_Merging ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System> ;
+    ns1:metric ns1:Consolidated_Similarity_Graph .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Intelligent_Opinion_Sampling> a rdf:Statement ;
+    hi:informationMethod ns1:Argument_Quality_Classification,
+        ns1:Farthest-First_Traversal,
+        ns1:S-BERT_Embedding ;
+    rdf:object ns1:Intelligent_Opinion_Sampling ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System> ;
+    ns1:metric ns1:Opinion_Selection .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Common_Ground_Formation> a rdf:Statement ;
+    rdf:object ns1:Common_Ground_Formation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Epistemic_Capacity_Verification> a rdf:Statement ;
+    hi:informationMethod ns1:Interpreted_Systems,
+        ns1:Knowledge_Logic ;
+    rdf:object ns1:Epistemic_Capacity_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> ;
+    ns1:metric ns1:Knowledge_Assessment .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Intention_Verification> a rdf:Statement ;
+    hi:informationMethod ns1:Intention_Modeling,
+        ns1:Propositional_Logic ;
+    rdf:object ns1:Intention_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> ;
+    ns1:metric ns1:Intention_Assessment .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Strategic_Ability_Verification> a rdf:Statement ;
+    hi:informationMethod ns1:Alternating-time_Logic,
+        ns1:Interpreted_Systems ;
+    rdf:object ns1:Strategic_Ability_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> ;
+    ns1:metric ns1:Strategic_Ability_Assessment .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Strategic_Adaptation> a rdf:Statement ;
+    hi:informationMethod ns1:Behavioral_Learning,
+        ns1:Equilibrium_Calculation ;
+    rdf:object ns1:Strategic_Adaptation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> ;
+    ns1:metric ns1:Collaborative_Strategy,
+        ns1:Score_Improvement .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Theory_of_Mind> a rdf:Statement ;
+    rdf:object ns1:Theory_of_Mind ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Epistemic_Capacity_Verification> a rdf:Statement ;
+    rdf:object ns1:Epistemic_Capacity_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Intention_Verification> a rdf:Statement ;
+    rdf:object ns1:Intention_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Strategic_Ability_Verification> a rdf:Statement ;
+    rdf:object ns1:Strategic_Ability_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Analyst_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Visual_Analysis> a rdf:Statement ;
+    hi:informationMethod ns1:Visual_Inspection ;
+    rdf:object ns1:Visual_Analysis ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Analyst> ;
+    ns1:metric ns1:Qualitative_Insights .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Argument_Annotation> a rdf:Statement ;
+    hi:informationMethod ns1:Manual_Extraction ;
+    rdf:object ns1:Argument_Annotation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    ns1:metric ns1:Key_Argument_Lists .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Image_Annotation> a rdf:Statement ;
+    hi:informationMethod ns1:Human_Cognition ;
+    rdf:object ns1:Image_Annotation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    ns1:metric ns1:Human_Feedback_Accuracy .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Machine_Teaching> a rdf:Statement ;
+    hi:informationMethod ns1:Human_Decision-making ;
+    rdf:object ns1:Machine_Teaching ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    ns1:metric ns1:Learning_Efficiency .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Pairwise_Annotation> a rdf:Statement ;
+    hi:informationMethod ns1:Manual_Labeling ;
+    rdf:object ns1:Pairwise_Annotation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    ns1:metric ns1:Similarity_Labels .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Topic_Assignment> a rdf:Statement ;
+    hi:informationMethod ns1:BERTopic_Modeling,
+        ns1:Manual_Assignment ;
+    rdf:object ns1:Topic_Assignment ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    ns1:metric ns1:Topic_Assignments .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Explanation_Request> a rdf:Statement ;
+    hi:informationMethod ns1:Natural_Language_Processing ;
+    rdf:object ns1:Explanation_Request ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User> ;
+    ns1:metric ns1:Request_Clarity .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Visual_Representation> a rdf:Statement ;
+    hi:informationMethod ns1:Symbolic_Representation ;
+    rdf:object ns1:Visual_Representation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User> ;
+    ns1:metric ns1:AI_System_Visualization .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Common_Ground_Formation> a rdf:Statement ;
+    hi:informationMethod ns1:Behavioral_Adaptation,
+        ns1:Strategic_Convergence ;
+    rdf:object ns1:Common_Ground_Formation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human> ;
+    ns1:metric ns1:Cognitive_Efficiency,
+        ns1:Stable_Collaboration .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Theory_of_Mind> a rdf:Statement ;
+    hi:informationMethod ns1:Implicit_Modeling,
+        ns1:Simulation-ToM ;
+    rdf:object ns1:Theory_of_Mind ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human> ;
+    ns1:metric ns1:Perspective_Alignment,
+        ns1:Score_Improvement .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Active_Learning> a rdf:Statement ;
+    hi:informationMethod ns1:Entropy-based_Selection,
+        ns1:Variable_Threshold ;
+    rdf:object ns1:Active_Learning ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System> ;
+    ns1:metric ns1:Sample_Selection_Efficiency .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Classification> a rdf:Statement ;
+    hi:informationMethod ns1:Logistic_Regression ;
+    rdf:object ns1:Classification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System> ;
+    ns1:metric ns1:Classification_Accuracy .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Online_Learning> a rdf:Statement ;
+    hi:informationMethod ns1:Logistic_Regression ;
+    rdf:object ns1:Online_Learning ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System> ;
+    ns1:metric ns1:Accumulated_Accuracy,
+        ns1:Test_Set_Accuracy .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Performance_Style_Encoding> a rdf:Statement ;
+    hi:informationMethod ns1:Transformer_Architecture,
+        ns1:Variational_Autoencoders ;
+    rdf:object ns1:Performance_Style_Encoding ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model> ;
+    ns1:metric ns1:Performance_Control,
+        ns1:Style_Embeddings .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Real-time_Performance_Generation> a rdf:Statement ;
+    hi:informationMethod ns1:Transformer_Architecture,
+        ns1:Variational_Autoencoders ;
+    rdf:object ns1:Real-time_Performance_Generation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model> ;
+    ns1:metric ns1:Real-time_Responsiveness,
+        ns1:Rendered_Performance .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Neural_Network_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Pattern_Recognition> a rdf:Statement ;
+    hi:informationMethod ns1:Deep_Learning ;
+    rdf:object ns1:Pattern_Recognition ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Neural_Network> ;
+    ns1:metric ns1:Activation_Patterns .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Nursing_Staff_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Human_Verification> a rdf:Statement ;
+    hi:informationMethod ns1:Expert_Assessment ;
+    rdf:object ns1:Human_Verification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Nursing_Staff> ;
+    ns1:metric ns1:Intervention_Feedback,
+        ns1:Validated_Care_Plan .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Environment_Sensing> a rdf:Statement ;
+    hi:informationMethod ns1:Sensor_Data_Processing ;
+    rdf:object ns1:Environment_Sensing ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot> ;
+    ns1:metric ns1:Environmental_Data .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Reinforcement_Learning> a rdf:Statement ;
+    hi:informationMethod ns1:Statistical_Learning ;
+    rdf:object ns1:Reinforcement_Learning ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot> ;
+    ns1:metric ns1:Navigation_Decisions .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Explanation_Delivery> a rdf:Statement ;
+    hi:informationMethod ns1:Dialog_Management,
+        ns1:Natural_Language_Generation ;
+    rdf:object ns1:Explanation_Delivery ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot> ;
+    ns1:metric ns1:User_Understanding .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Need_Detection> a rdf:Statement ;
+    hi:informationMethod ns1:Mental_Modeling,
+        ns1:User_Feedback_Analysis ;
+    rdf:object ns1:Need_Detection ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot> ;
+    ns1:metric ns1:Detection_Accuracy .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Need_Identification> a rdf:Statement ;
+    hi:informationMethod ns1:Query_Resolution,
+        ns1:Self-Situation_Awareness ;
+    rdf:object ns1:Need_Identification ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot> ;
+    ns1:metric ns1:Identification_Precision .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Neural_Network_Interpretation> a rdf:Statement ;
+    rdfs:label "Neural Network Interpretation" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Analyst>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Neural_Network> ;
+    rdf:object ns1:Neural_Network_Interpretation ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability> ;
+    ns1:usesProcess ns1:Error_Detection,
+        ns1:Representation_Visualization .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Key_Argument_Extraction> a rdf:Statement ;
+    rdfs:label "Key Argument Extraction" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> ;
+    rdf:object ns1:Key_Argument_Extraction ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction> ;
+    ns1:usesProcess ns1:Argument_Annotation,
+        ns1:Clustering,
+        ns1:Intelligent_Merging,
+        ns1:Intelligent_Opinion_Sampling,
+        ns1:Pairwise_Annotation,
+        ns1:Topic_Assignment .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Collaborative_Card_Game> a rdf:Statement ;
+    rdfs:label "Collaborative Card Game" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human> ;
+    rdf:object ns1:Collaborative_Card_Game ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play> ;
+    ns1:usesProcess ns1:Common_Ground_Formation,
+        ns1:Theory_of_Mind .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Meeting_Explanation_Needs> a rdf:Statement ;
+    rdfs:label "Meeting Explanation Needs" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot> ;
+    rdf:object ns1:Meeting_Explanation_Needs ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots> ;
+    ns1:usesProcess ns1:Explanation_Delivery,
+        ns1:Need_Detection,
+        ns1:Need_Identification .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Expressive_Performance_Rendering> a rdf:Statement ;
+    rdfs:label "Expressive Performance Rendering" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model> ;
+    rdf:object ns1:Expressive_Performance_Rendering ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance> ;
+    ns1:usesProcess ns1:Interactive_Learning,
+        ns1:Multi-modal_Interaction,
+        ns1:Performance_Style_Encoding,
+        ns1:Real-time_Performance_Generation .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Image_Classification> a rdf:Statement ;
+    rdfs:label "Image Classification" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System> ;
+    rdf:object ns1:Image_Classification ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML> ;
+    ns1:usesProcess ns1:Image_Annotation,
+        ns1:Online_Learning .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Care_Intervention_Recommendation> a rdf:Statement ;
+    rdfs:label "Care Intervention Recommendation" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Nursing_Staff> ;
+    rdf:object ns1:Care_Intervention_Recommendation ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning> ;
+    ns1:usesProcess ns1:Data_Structuring,
+        ns1:Federated_Learning,
+        ns1:Human_Verification,
+        ns1:NLP_Analysis .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Office_Navigation> a rdf:Statement ;
+    rdfs:label "Office Navigation" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot> ;
+    rdf:object ns1:Office_Navigation ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation> ;
+    ns1:usesProcess ns1:Environment_Sensing,
+        ns1:Reinforcement_Learning,
+        ns1:Visual_Representation .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Actual_Trust_Assessment> a rdf:Statement ;
+    rdfs:label "Actual Trust Assessment" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent> ;
+    rdf:object ns1:Actual_Trust_Assessment ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification> ;
+    ns1:usesProcess ns1:Epistemic_Capacity_Verification,
+        ns1:Intention_Verification,
+        ns1:Strategic_Ability_Verification .
+
+ns1:Coverage a ns1:QuantitativeMetric ;
+    rdfs:label "Coverage" ;
+    dcterms:subject dbr:Coverage,
+        conceptnet:coverage .
+
+ns1:Error_Metric a ns1:QuantitativeMetric ;
+    rdfs:label "Error Metric" .
+
+ns1:Precision a ns1:QuantitativeMetric ;
+    rdfs:label "Precision" ;
+    dcterms:subject dbr:Double_precision,
+        dbr:Precision,
+        conceptnet:double_precision,
+        conceptnet:high_precision,
+        conceptnet:precision,
+        conceptnet:precisionise,
+        conceptnet:precisionize .
+
+ns1:Transitivity_Score a ns1:QuantitativeMetric ;
+    rdfs:label "Transitivity Score" .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/_actor_Tutor_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Dialogue_Management> a rdf:Statement ;
+    hi:informationMethod ns1:Q-Learning,
+        ns1:State_Discretization ;
+    rdf:object ns1:Dialogue_Management ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject ns1:_actor_Tutor_Agent ;
+    ns1:metric ns1:Dialogue_Quality .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/_actor_Tutor_Agent_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Question-Answer_Processing> a rdf:Statement ;
+    hi:informationMethod ns1:Semantic_Analysis ;
+    rdf:object ns1:Question-Answer_Processing ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject ns1:_actor_Tutor_Agent ;
+    ns1:metric ns1:Answer_Quality .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/_actor_User_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Question_Answering> a rdf:Statement ;
+    hi:informationMethod ns1:Language_Modeling ;
+    rdf:object ns1:Question_Answering ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject ns1:_actor_User ;
+    ns1:metric ns1:Answer_Quality .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/_scenario_Intelligent_Tutoring_System_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Question_Answering_Assistance> a rdf:Statement ;
+    rdfs:label "Question Answering Assistance" ;
+    hi:interactingAgent ns1:_actor_Tutor_Agent,
+        ns1:_actor_User ;
+    rdf:object ns1:Question_Answering_Assistance ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject ns1:_scenario_Intelligent_Tutoring_System ;
+    ns1:usesProcess ns1:Dialogue_Management,
+        ns1:Question-Answer_Processing .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/2303.00866> a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "A prototype hybrid prediction market for estimating replicability of published work" ;
+    dcterms:title "A prototype hybrid prediction market for estimating replicability of published work" ;
+    owl:sameAs <https://arxiv.org/abs/2303.00866> ;
+    ns1:examinesScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Feature_Extraction> a rdf:Statement ;
+    hi:informationMethod ns1:Feature_Pipeline ;
+    rdf:object ns1:Feature_Extraction ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders> ;
+    ns1:metric ns1:Paper_Features_Metric .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Market_Trading> a rdf:Statement ;
+    hi:informationMethod ns1:Logarithmic_Market_Scoring ;
+    rdf:object ns1:Market_Trading ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders> ;
+    ns1:metric ns1:Price_Convergence_Metric .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Market_Trading> a rdf:Statement ;
+    rdf:object ns1:Market_Trading ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders_processing_information_https://github.com/EliasLiinamaa/kgst_project_group_3/Prediction_Formation> a rdf:Statement ;
+    hi:informationMethod ns1:Genetic_Algorithm,
+        ns1:Human_Judgment ;
+    rdf:object ns1:Prediction_Formation ;
+    rdf:predicate hi:processingInformation ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders> ;
+    ns1:metric ns1:Prediction_Accuracy_Metric .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market_interaction_https://github.com/EliasLiinamaa/kgst_project_group_3/Replication_Prediction> a rdf:Statement ;
+    rdfs:label "Replication Prediction" ;
+    hi:interactingAgent <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders> ;
+    rdf:object ns1:Replication_Prediction ;
+    rdf:predicate hi:hasInteraction ;
+    rdf:subject <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market> ;
+    ns1:usesProcess ns1:Feature_Extraction,
+        ns1:Market_Trading,
+        ns1:Prediction_Formation .
+
+ns1:hhai-2021_paper_46.pdf a ns1:HybridIntelligenceAcademicArticle ;
+    rdfs:label "Training Intelligent Tutors on User Simulators Using Reinforcement Learning" ;
+    dcterms:title "Training Intelligent Tutors on User Simulators Using Reinforcement Learning" ;
+    owl:sameAs <https://www.hhai-conference.org/wp-content/uploads/2022/08/hhai-2021_paper_46.pdf> ;
+    ns1:examinesScenario ns1:_scenario_Intelligent_Tutoring_System .
+
+ns1:metric rdfs:range ns1:Metric .
+
+ns1:scenarioIn owl:inverseOf ns1:examinesScenario .
+
+ns1:usesProcess rdfs:domain hi:Interaction ;
+    rdfs:range hi:InformationProcessing .
+
+hi:Context a owl:Class .
+
+hi:Domain a owl:Class .
+
+hi:Endgoal a owl:Class .
+
+hi:EthicalConsideration a owl:Class .
+
+ns1:AI_System_Visualization a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "AI System Visualization" .
+
+ns1:Accumulated_Accuracy a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Accumulated Accuracy" ;
+    dcterms:subject dbr:Accuracy,
+        conceptnet:accuracy .
+
+ns1:Activation_Patterns a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Activation Patterns" .
+
+ns1:Active_Learning rdfs:label "Active Learning" ;
+    skos:definition "The system's ability to select which images to present to humans for annotation based on uncertainty. This capability helps reduce the cognitive load on humans by only showing images where machine classification is uncertain." .
+
+ns1:Actual_Trust_Assessment rdfs:label "Actual Trust Assessment" .
+
+ns1:Alternating-time_Logic a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Alternating-time Logic" .
+
+ns1:Argument_Quality_Classification a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Argument Quality Classification" .
+
+ns1:BERTopic_Modeling a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "BERTopic Modeling" .
+
+ns1:Behavioral_Adaptation a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Behavioral Adaptation" .
+
+ns1:Behavioral_Learning a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Behavioral Learning" .
+
+ns1:Care_Intervention_Recommendation rdfs:label "Care Intervention Recommendation" .
+
+ns1:Classification rdfs:label "Classification" ;
+    dcterms:subject dbr:Classification,
+        dbr:Classifications,
+        dbr:Classify,
+        dbr:Classifying,
+        dbr:General_classification,
+        conceptnet:classification,
+        conceptnet:classifications,
+        conceptnet:classify,
+        conceptnet:classifying,
+        conceptnet:general_classification ;
+    skos:definition "The system's ability to predict the class (cat or dog) of images based on previously learned patterns from human feedback." .
+
+ns1:Classification_Accuracy a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Classification Accuracy" .
+
+ns1:Cognitive_Efficiency a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Cognitive Efficiency" .
+
+ns1:Collaborative_Card_Game rdfs:label "Collaborative Card Game" .
+
+ns1:Collaborative_Strategy a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Collaborative Strategy" .
+
+ns1:Comparative_Analysis a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Comparative Analysis" ;
+    dcterms:subject dbr:Comparative,
+        dbr:Comparative_case,
+        conceptnet:comparative,
+        conceptnet:comparative_case .
+
+ns1:Consolidated_Similarity_Graph a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Consolidated Similarity Graph" .
+
+ns1:Data_Modeling a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Data Modeling" ;
+    dcterms:subject dbr:Data_model,
+        dbr:Data_modeling,
+        conceptnet:data_model,
+        conceptnet:data_modeling .
+
+ns1:Data_Relevance_Assessment a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Data Relevance Assessment" .
+
+ns1:Deep_Learning a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Deep Learning" ;
+    dcterms:subject dbr:Deep_learning,
+        conceptnet:deep_learning .
+
+ns1:Detection_Accuracy a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Detection Accuracy" .
+
+ns1:Dialog_Management a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Dialog Management" ;
+    dcterms:subject dbr:Dialog,
+        conceptnet:dialog,
+        conceptnet:dialoging,
+        conceptnet:dialogise,
+        conceptnet:dialogize .
+
+ns1:Dialogue_Quality a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Dialogue Quality" .
+
+ns1:Dimensionality_Reduction a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Dimensionality Reduction" ;
+    dcterms:subject conceptnet:dimensionalised,
+        conceptnet:dimensionalization,
+        conceptnet:dimensionalize .
+
+ns1:Distributed_Machine_Learning a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Distributed Machine Learning" .
+
+ns1:Entropy-based_Selection a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Entropy-based Selection" .
+
+ns1:Environmental_Data a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Environmental Data" .
+
+ns1:Equilibrium_Calculation a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Equilibrium Calculation" ;
+    dcterms:subject dbr:Equilibrium,
+        conceptnet:equilibrium .
+
+ns1:Error_Identification a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Error Identification" .
+
+ns1:Expert_Assessment a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Expert Assessment" .
+
+ns1:Explanation_Request rdfs:label "Explanation Request" ;
+    skos:definition "The capability of humans to indicate a need for explanation through verbal requests or other feedback mechanisms." .
+
+ns1:Expressive_Performance_Rendering rdfs:label "Expressive Performance Rendering" .
+
+ns1:Farthest-First_Traversal a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Farthest-First Traversal" .
+
+ns1:Feature_Pipeline a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Feature Pipeline" .
+
+ns1:Feedback-based_Optimization a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Feedback-based Optimization" .
+
+ns1:Force-based_Layout a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Force-based Layout" .
+
+ns1:Genetic_Algorithm a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Genetic Algorithm" ;
+    dcterms:subject dbr:Genetic_algorithm,
+        dbr:Genetic_algorithms,
+        conceptnet:genetic_algorithm,
+        conceptnet:genetic_algorithms .
+
+ns1:Graph_Clustering a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Graph Clustering" .
+
+ns1:Human_Cognition a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Human Cognition" ;
+    dcterms:subject dbr:Cognition,
+        conceptnet:cognition,
+        conceptnet:cognitional .
+
+ns1:Human_Decision-making a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Human Decision-making" ;
+    dcterms:subject dbr:Decision_making,
+        dbr:Making_decisions,
+        conceptnet:decision_making,
+        conceptnet:decisioning,
+        conceptnet:making_decisions .
+
+ns1:Human_Feedback_Accuracy a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Human Feedback Accuracy" .
+
+ns1:Human_Judgment a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Human Judgment" ;
+    dcterms:subject dbr:Judgement,
+        dbr:Judgment,
+        dbr:Judgments,
+        conceptnet:judgement,
+        conceptnet:judgment,
+        conceptnet:judgments,
+        conceptnet:make_judgement .
+
+ns1:Identification_Precision a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Identification Precision" .
+
+ns1:Image_Classification rdfs:label "Image Classification" ;
+    dcterms:subject dbr:Classification,
+        conceptnet:classification .
+
+ns1:Implicit_Modeling a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Implicit Modeling" ;
+    dcterms:subject dbr:Implicitization,
+        conceptnet:implicitization .
+
+ns1:Intent_Extraction a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Intent Extraction" .
+
+ns1:Intention_Assessment a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Intention Assessment" .
+
+ns1:Intention_Modeling a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Intention Modeling" .
+
+ns1:Interaction_Quality a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Interaction Quality" .
+
+ns1:Intervention_Feedback a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Intervention Feedback" .
+
+ns1:Key_Argument_Extraction rdfs:label "Key Argument Extraction" .
+
+ns1:Key_Argument_Lists a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Key Argument Lists" .
+
+ns1:Key_Arguments a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Key Arguments" .
+
+ns1:Knowledge_Assessment a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Knowledge Assessment" .
+
+ns1:Knowledge_Logic a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Knowledge Logic" .
+
+ns1:Language_Modeling a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Language Modeling" .
+
+ns1:Learning_Efficiency a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Learning Efficiency" .
+
+ns1:Logarithmic_Market_Scoring a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Logarithmic Market Scoring" .
+
+ns1:Machine_Teaching rdfs:label "Machine Teaching" ;
+    skos:definition "The capability where humans decide when and which feedback to provide to the system. This involves making conscious decisions about which images to annotate when multiple are presented simultaneously." .
+
+ns1:Manual_Assignment a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Manual Assignment" .
+
+ns1:Manual_Extraction a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Manual Extraction" ;
+    dcterms:subject dbr:Extraction,
+        dbr:Extractions,
+        conceptnet:extraction,
+        conceptnet:extractions .
+
+ns1:Manual_Labeling a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Manual Labeling" ;
+    dcterms:subject dbr:Labeling,
+        conceptnet:labeling .
+
+ns1:Meeting_Explanation_Needs rdfs:label "Meeting Explanation Needs" .
+
+ns1:Mental_Modeling a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Mental Modeling" .
+
+ns1:Model_Improvement a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Model Improvement" .
+
+ns1:Named_Entity_Recognition a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Named Entity Recognition" .
+
+ns1:Natural_Language_Generation a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Natural Language Generation" .
+
+ns1:Natural_Language_Processing a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Natural Language Processing" ;
+    dcterms:subject dbr:Natural_language_processing,
+        conceptnet:natural_language_processing .
+
+ns1:Navigation_Decisions a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Navigation Decisions" .
+
+ns1:Neural_Network_Interpretation rdfs:label "Neural Network Interpretation" .
+
+ns1:Office_Navigation rdfs:label "Office Navigation" .
+
+ns1:Opinion_Selection a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Opinion Selection" .
+
+ns1:POWER_Algorithm a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "POWER Algorithm" .
+
+ns1:Paper_Features_Metric a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Paper Features Metric" .
+
+ns1:Pareto_Dependency a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Pareto Dependency" .
+
+ns1:Pattern_Recognition rdfs:label "Pattern Recognition" ;
+    dcterms:subject dbr:Pattern_recognition,
+        conceptnet:pattern_recognition ;
+    skos:definition "The neural network's capability to identify and extract patterns from input data through learned representations." .
+
+ns1:Performance_Control a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Performance Control" .
+
+ns1:Personalization a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Personalization" ;
+    dcterms:subject dbr:Personalisation,
+        dbr:Personalization,
+        dbr:Personalize,
+        dbr:Personalized,
+        conceptnet:personalisation,
+        conceptnet:personalization,
+        conceptnet:personalize,
+        conceptnet:personalized,
+        conceptnet:personalizing .
+
+ns1:Perspective_Alignment a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Perspective Alignment" .
+
+ns1:Prediction_Accuracy_Metric a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Prediction Accuracy Metric" .
+
+ns1:Price_Convergence_Metric a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Price Convergence Metric" .
+
+ns1:Privacy-Preserving_Models a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Privacy-Preserving Models" .
+
+ns1:Propositional_Logic a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Propositional Logic" ;
+    dcterms:subject dbr:Implicational_propositional_calculus,
+        dbr:Propositional,
+        dbr:Propositional_calculus,
+        dbr:Propositional_logic,
+        conceptnet:implicational_propositional_calculus,
+        conceptnet:propositional,
+        conceptnet:propositional_calculus,
+        conceptnet:propositional_logic .
+
+ns1:Q-Learning a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Q-Learning" .
+
+ns1:Qualitative_Insights a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Qualitative Insights" ;
+    dcterms:subject dbr:Qualitative,
+        dbr:Qualitative_analysis,
+        dbr:Qualitative_research,
+        conceptnet:qualitative,
+        conceptnet:qualitative_analysis,
+        conceptnet:qualitative_research,
+        conceptnet:qualitativeness .
+
+ns1:Query_Resolution a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Query Resolution" .
+
+ns1:Question_Answering rdfs:label "Question Answering" ;
+    dcterms:subject conceptnet:answering_question,
+        conceptnet:answering_questions ;
+    skos:definition "The capability of users (simulated or human) to generate responses to questions with guidance from the tutor agent." .
+
+ns1:Question_Answering_Assistance rdfs:label "Question Answering Assistance" .
+
+ns1:Real-time_Responsiveness a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Real-time Responsiveness" .
+
+ns1:Rendered_Performance a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Rendered Performance" .
+
+ns1:Replication_Prediction rdfs:label "Replication Prediction" .
+
+ns1:Request_Clarity a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Request Clarity" .
+
+ns1:S-BERT_Embedding a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "S-BERT Embedding" .
+
+ns1:Sample_Selection_Efficiency a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Sample Selection Efficiency" .
+
+ns1:Self-Situation_Awareness a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Self-Situation Awareness" ;
+    dcterms:subject dbr:Self_awareness,
+        conceptnet:self_awareness .
+
+ns1:Semantic_Analysis a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Semantic Analysis" ;
+    dcterms:subject dbr:Semantic_analysis,
+        conceptnet:semantic_analysis .
+
+ns1:Sensor_Data_Processing a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Sensor Data Processing" .
+
+ns1:Similarity_Labels a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Similarity Labels" .
+
+ns1:Simulation-ToM a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Simulation-ToM" .
+
+ns1:Speech_Recognition a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Speech Recognition" ;
+    dcterms:subject dbr:Speech_recognition,
+        dbr:Voice_recognition,
+        conceptnet:speech_recognition,
+        conceptnet:voice_recognition .
+
+ns1:Stable_Collaboration a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Stable Collaboration" ;
+    dcterms:subject dbr:Collaboration,
+        conceptnet:collaboration .
+
+ns1:State_Discretization a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "State Discretization" .
+
+ns1:Statistical_Learning a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Statistical Learning" .
+
+ns1:Strategic_Ability_Assessment a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Strategic Ability Assessment" .
+
+ns1:Strategic_Adaptation rdfs:label "Strategic Adaptation" ;
+    skos:definition "The ability to adjust behavior based on observations of a partner's actions and game outcomes. Agents balance self-benefit with cooperative behavior, adjusting their eagerness to play cards based on how it affects collaboration." .
+
+ns1:Strategic_Convergence a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Strategic Convergence" .
+
+ns1:Structured_Case_Database a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Structured Case Database" .
+
+ns1:Structured_Data a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Structured Data" ;
+    dcterms:subject dbr:Data_structure,
+        conceptnet:data_structure .
+
+ns1:Style_Embeddings a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Style Embeddings" .
+
+ns1:Symbolic_Representation a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Symbolic Representation" ;
+    dcterms:subject dbr:Symbolic_representation,
+        conceptnet:symbolic_representation .
+
+ns1:Test_Set_Accuracy a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Test Set Accuracy" .
+
+ns1:Text_Classification a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Text Classification" .
+
+ns1:Topic_Assignments a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Topic Assignments" .
+
+ns1:Topographic_Map a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Topographic Map" ;
+    dcterms:subject dbr:Topographic,
+        dbr:Topographic_map,
+        dbr:Topographical_map,
+        conceptnet:topographic,
+        conceptnet:topographic_map,
+        conceptnet:topographic_point,
+        conceptnet:topographical_map,
+        conceptnet:topographically .
+
+ns1:User_Data_Collection a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "User Data Collection" .
+
+ns1:User_Feedback_Analysis a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "User Feedback Analysis" .
+
+ns1:User_Intent_Understanding a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "User Intent Understanding" .
+
+ns1:User_Understanding a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "User Understanding" ;
+    dcterms:subject dbr:Understanding,
+        conceptnet:understanding .
+
+ns1:Validated_Care_Plan a ns1:Metric,
+        ns1:QualitativeMetric ;
+    rdfs:label "Validated Care Plan" .
+
+ns1:Variable_Threshold a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Variable Threshold" ;
+    dcterms:subject dbr:Threshold,
+        conceptnet:threshold,
+        conceptnet:threshold_level .
+
+ns1:Video_Analysis a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Video Analysis" .
+
+ns1:Visual_Analysis rdfs:label "Visual Analysis" ;
+    skos:definition "The human capability to visually inspect and interpret the topographic activation maps to understand patterns and anomalies in neural network behavior." .
+
+ns1:Visual_Inspection a hi:ProcessingMethod,
+        ns1:Other ;
+    rdfs:label "Visual Inspection" .
+
+ns1:examinesScenario rdfs:range hi:Scenario .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Analyst> a hi:Human ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Neural_Network> a hi:ArtificialAgent ;
+    dcterms:subject dbr:Artificial_neural_network,
+        dbr:Neural_net,
+        dbr:Neural_network,
+        dbr:Neural_networks,
+        conceptnet:artificial_neural_network,
+        conceptnet:neural_net,
+        conceptnet:neural_network,
+        conceptnet:neural_networks ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Nursing_Staff> a hi:Human ;
+    dcterms:subject dbr:Nurses,
+        conceptnet:nurses ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning> .
+
+ns1:Answer_Quality a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Answer Quality" .
+
+ns1:Argument_Annotation a hi:InformationProcessing ;
+    rdfs:label "Argument Annotation" ;
+    skos:definition "Human annotators identifying arguments from opinions and adding them to a list of key arguments, evaluating if opinions contain arguments and extracting them" .
+
+ns1:Clustering a hi:InformationProcessing ;
+    rdfs:label "Clustering" ;
+    dcterms:subject dbr:Clustering,
+        dbr:Clusterization,
+        conceptnet:clustering,
+        conceptnet:clusterisation,
+        conceptnet:clusterise,
+        conceptnet:clusterization,
+        conceptnet:clusterize ;
+    skos:definition "Using graph clustering algorithms to identify groups of similar arguments and generate the final consolidated list of key arguments" .
+
+ns1:Data_Structuring a hi:InformationProcessing ;
+    rdfs:label "Data Structuring" ;
+    dcterms:subject dbr:Data_structure,
+        conceptnet:data_structure ;
+    skos:definition "Converting unstructured case documentation from different facilities into a standardized structured database that can be used for analysis and care intervention recommendations." .
+
+ns1:Dialogue_Management a hi:InformationProcessing ;
+    rdfs:label "Dialogue Management" ;
+    skos:definition "The capability to maintain a conversational flow by selecting appropriate intervention prompts from a predefined set and tracking dialogue state over multiple turns of conversation." .
+
+ns1:Environment_Sensing a hi:InformationProcessing ;
+    rdfs:label "Environment Sensing" ;
+    skos:definition "The capability to perceive and process environmental data through sensors. The Roomba uses two sensors to detect obstacles and map the office space for navigation purposes." .
+
+ns1:Error_Detection a hi:InformationProcessing ;
+    rdfs:label "Error Detection" ;
+    skos:definition "The capability to identify systematic errors or biases in datasets or models through visual inspection of topographic activation maps." .
+
+ns1:Explanation_Delivery a hi:InformationProcessing ;
+    rdfs:label "Explanation Delivery" ;
+    skos:definition "The capability to communicate explanations in a suitable manner through natural language, taking into account the specific user needs and contextual factors." .
+
+ns1:Feature_Extraction a hi:InformationProcessing ;
+    rdfs:label "Feature Extraction" ;
+    skos:definition "Extracting 41 features from scientific papers, including semantic, bibliometric, and statistical information like p-values, author names, author count, venue, and acknowledgment of funding." .
+
+ns1:Federated_Learning a hi:InformationProcessing ;
+    rdfs:label "Federated Learning" ;
+    skos:definition "A collaborative computing approach that enables multiple healthcare facilities to train AI models on their local data without sharing sensitive patient information, where only model properties are transferred between organizations." .
+
+ns1:Human_Verification a hi:InformationProcessing ;
+    rdfs:label "Human Verification" ;
+    skos:definition "A human-in-the-loop process where nursing staff evaluate proposed care interventions in terms of expected effectiveness and necessity, then accept or reject them for inclusion in the care plan." .
+
+ns1:Image_Annotation a hi:InformationProcessing ;
+    rdfs:label "Image Annotation" ;
+    skos:definition "The capability of humans to recognize images and provide labels (cat or dog) as feedback to the system. This capability is affected by cognitive workload when multiple images are presented simultaneously." .
+
+ns1:Intelligent_Merging a hi:InformationProcessing ;
+    rdfs:label "Intelligent Merging" ;
+    dcterms:subject dbr:Merging,
+        conceptnet:merging ;
+    skos:definition "Combining automatic and manual labeling efficiently to consolidate similar arguments using a partial-ordering approach" .
+
+ns1:Intelligent_Opinion_Sampling a hi:InformationProcessing ;
+    rdfs:label "Intelligent Opinion Sampling" ;
+    skos:definition "Using NLP and sampling techniques to select diverse opinions to present to human annotators, combining S-BERT embeddings with Farthest-First Traversal algorithm to maximize diversity" .
+
+ns1:Interactive_Learning a hi:InformationProcessing ;
+    rdfs:label "Interactive Learning" ;
+    skos:definition "Ability to improve performance rendering over time through user feedback, storing interactions and using them to fine-tune the model." .
+
+ns1:Interpreted_Systems a hi:ProcessingMethod,
+        ns1:Symbolic ;
+    rdfs:label "Interpreted Systems" .
+
+ns1:Logistic_Regression a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Logistic Regression" .
+
+ns1:Multi-modal_Interaction a hi:InformationProcessing ;
+    rdfs:label "Multi-modal Interaction" ;
+    skos:definition "Ability to process and respond to multiple communication channels from the user, including speech, facial expressions, and gestures to control music generation." .
+
+ns1:NLP_Analysis a hi:InformationProcessing ;
+    rdfs:label "NLP Analysis" ;
+    dcterms:subject dbr:Nlp,
+        conceptnet:nlp ;
+    skos:definition "Processing unstructured free text data from patient records (SIS) using natural language processing methods to classify relevant text modules and extract attributes for the structured case database." .
+
+ns1:Need_Detection a hi:InformationProcessing ;
+    rdfs:label "Need Detection" ;
+    skos:definition "The capability to detect when a user needs an explanation, especially in situations where the robot's behavior may be perceived as surprising, negative, or undesirable." .
+
+ns1:Need_Identification a hi:InformationProcessing ;
+    rdfs:label "Need Identification" ;
+    dcterms:subject dbr:Identification,
+        conceptnet:identification ;
+    skos:definition "The capability to identify the specific nature of the user's explanation need and determine what aspects of the robot's behavior require explanation." .
+
+ns1:Online_Learning a hi:InformationProcessing ;
+    rdfs:label "Online Learning" ;
+    dcterms:subject dbr:Online_learning,
+        conceptnet:online_learning ;
+    skos:definition "The system's ability to learn incrementally from streaming data in a single-pass manner without storing all historical data. The learning happens in real-time as more annotated data becomes available." .
+
+ns1:Pairwise_Annotation a hi:InformationProcessing ;
+    rdfs:label "Pairwise Annotation" ;
+    skos:definition "Human annotators evaluating the semantic similarity between argument pairs to prepare for consolidation" .
+
+ns1:Performance_Style_Encoding a hi:InformationProcessing ;
+    rdfs:label "Performance Style Encoding" ;
+    skos:definition "Ability to encode, represent and manipulate musical performance styles at different levels of the musical hierarchy (note, beat, bar) to enable style control." .
+
+ns1:Prediction_Formation a hi:InformationProcessing ;
+    rdfs:label "Prediction Formation" ;
+    skos:definition "Combining human expertise and AI predictions through market mechanisms to generate a final prediction about the replicability of a scientific finding." .
+
+ns1:Question-Answer_Processing a hi:InformationProcessing ;
+    rdfs:label "Question-Answer Processing" ;
+    skos:definition "The capability to analyze user responses to determine their relevance to the overarching question and to measure semantic diversity compared to previous answers." .
+
+ns1:Real-time_Performance_Generation a hi:InformationProcessing ;
+    rdfs:label "Real-time Performance Generation" ;
+    skos:definition "Ability to generate expressive music performances in real-time based on a written score and user control, allowing immediate response to user input." .
+
+ns1:Reinforcement_Learning a hi:InformationProcessing ;
+    rdfs:label "Reinforcement Learning" ;
+    skos:definition "A machine learning approach where an agent learns to make decisions by performing actions and receiving rewards or penalties in response. In this case, it enables the Roomba to learn optimal navigation strategies through trial and error." .
+
+ns1:Representation_Visualization a hi:InformationProcessing ;
+    rdfs:label "Representation Visualization" ;
+    skos:definition "The capability to transform high-dimensional neural network activations into 2D topographic maps that place similarly activated neurons close to each other, making the activations visually interpretable." .
+
+ns1:Score_Improvement a ns1:Metric,
+        ns1:QuantitativeMetric ;
+    rdfs:label "Score Improvement" .
+
+ns1:Topic_Assignment a hi:InformationProcessing ;
+    rdfs:label "Topic Assignment" ;
+    skos:definition "Assigning predefined topics to arguments to help with similarity computation in the consolidation phase" .
+
+ns1:Transformer_Architecture a hi:ProcessingMethod,
+        ns1:Neuro-symbolic ;
+    rdfs:label "Transformer Architecture" ;
+    dcterms:subject dbr:Transformer,
+        conceptnet:transformer .
+
+ns1:Variational_Autoencoders a hi:ProcessingMethod,
+        ns1:Statistical ;
+    rdfs:label "Variational Autoencoders" .
+
+ns1:Visual_Representation a hi:InformationProcessing ;
+    rdfs:label "Visual Representation" ;
+    dcterms:subject dbr:Graphical_representation,
+        conceptnet:graphical_representation ;
+    skos:definition "The ability to visually represent the components and processes of an AI system using the EASY-AI framework, which provides semantically-enhanced symbols to communicate the structure, purpose, and characteristics of AI systems." .
+
+ns1:_actor_User a hi:Human ;
+    dcterms:subject dbr:User,
+        dbr:User_name,
+        dbr:Users,
+        conceptnet:user,
+        conceptnet:user_name,
+        conceptnet:users ;
+    hi:inScenario ns1:_scenario_Intelligent_Tutoring_System .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human> a hi:Human ;
+    dcterms:subject dbr:Human,
+        dbr:Human_being,
+        conceptnet:human,
+        conceptnet:human_being ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Music_Performance_Model> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Roomba_Robot> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation> .
+
+ns1:Common_Ground_Formation a hi:InformationProcessing ;
+    rdfs:label "Common Ground Formation" ;
+    skos:definition "The process of establishing shared knowledge and mutual understanding between agents. Common Ground is achieved when agents no longer notice changes in their partner's behavior and no longer see score improvements from changing their own behavior, resulting in a stable collaborative strategy." .
+
+ns1:Epistemic_Capacity_Verification a hi:InformationProcessing ;
+    rdfs:label "Epistemic Capacity Verification" ;
+    skos:definition "The capability to verify that an agent or group of agents has the necessary knowledge about the environment and other agents to successfully accomplish a task. This relates to what agents can observe and distinguish in the system state." .
+
+ns1:Intention_Verification a hi:InformationProcessing ;
+    rdfs:label "Intention Verification" ;
+    skos:definition "The capability to verify that an agent or group of agents has the intention to accomplish a specific task. This focuses on what goals the agents have chosen and are committed to delivering." .
+
+ns1:Market_Trading a hi:InformationProcessing ;
+    rdfs:label "Market Trading" ;
+    dcterms:subject dbr:Market,
+        dbr:Markets,
+        dbr:Securities_trading,
+        dbr:Stock_trading,
+        dbr:Trading,
+        conceptnet:market,
+        conceptnet:markets,
+        conceptnet:securities_trading,
+        conceptnet:stock_trading,
+        conceptnet:trading ;
+    skos:definition "Buying and selling contracts representing replication outcomes that manipulate underlying asset prices, which can be interpreted as probabilities for event forecasting." .
+
+ns1:Strategic_Ability_Verification a hi:InformationProcessing ;
+    rdfs:label "Strategic Ability Verification" ;
+    skos:definition "The capability to verify that an agent or group of agents has the necessary strategic ability to accomplish a specific task, regardless of what other agents in the system do. This involves analyzing the available actions and potential strategies that agents can employ." .
+
+ns1:Theory_of_Mind a hi:InformationProcessing ;
+    rdfs:label "Theory of Mind" ;
+    dcterms:subject dbr:Philosophy_of_mind,
+        dbr:Theory_of_mind,
+        conceptnet:philosophy_of_mind,
+        conceptnet:theory_of_mind ;
+    skos:definition "The ability to take someone else's perspective and make estimations of their knowledge, beliefs, desires, and intentions. In the model, agents implicitly predict their partner's perspective in their own behavior, allowing them to coordinate actions without explicit communication." .
+
+ns1:_actor_Tutor_Agent a hi:ArtificialAgent ;
+    dcterms:subject dbr:Tutor,
+        conceptnet:tutor ;
+    hi:inScenario ns1:_scenario_Intelligent_Tutoring_System .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Bot_Traders> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_actor_Human_Traders> a hi:Human ;
+    dcterms:subject dbr:Traders,
+        conceptnet:traders ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market> .
+
+hi:InteractionTask a owl:Class .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AICDSS> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_AI_System> a hi:ArtificialAgent ;
+    dcterms:subject dbr:Ai,
+        conceptnet:ai,
+        conceptnet:computer_ais ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Agent> a hi:Human ;
+    dcterms:subject dbr:Agent,
+        conceptnet:agent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_ML_System> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Social_Robot> a hi:ArtificialAgent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_AI_Explainability> a hi:Scenario ;
+    rdfs:label "AI Explainability" ;
+    dcterms:description "A scenario where humans use topographic activation maps to understand, interpret and improve deep neural networks by visualizing their internal representations in an intuitive way similar to neuroscience brain activity maps." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction> a hi:Scenario ;
+    rdfs:label "Argument Extraction" ;
+    dcterms:description "Extracting key arguments from large and noisy sets of opinions to understand them quickly and accurately, specifically applied to citizen feedback on COVID-19 policy options" .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play> a hi:Scenario ;
+    rdfs:label "Collaborative Game Play" ;
+    dcterms:description "A scenario where artificially intelligent agents with different perspectives need to collaborate with each other to play a card game effectively. The agents initially have different 'views' of the world and strategies but must coordinate their actions to achieve a joint goal. This scenario serves as a model for human-AI collaborative systems where establishing common ground can reduce the need for constant perspective modeling." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots> a hi:Scenario ;
+    rdfs:label "Explainable Social Robots" ;
+    dcterms:description "A human-robot interaction setting where autonomous social robots can detect when a user needs an explanation, identify what type of explanation is needed, and provide suitable explanations in a natural way." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance> a hi:Scenario ;
+    rdfs:label "Interactive Music Co-Performance" ;
+    dcterms:description "A system enabling users to co-create expressive performances of notated music using speech and gestures. The human interacts with an AI performance model through a mobile application to control how music is performed in real-time, without requiring musical expertise." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML> a hi:Scenario ;
+    rdfs:label "Interactive Online ML" ;
+    dcterms:description "A scenario where humans and AI collaboratively annotate images in a streaming manner with time constraints. Humans provide feedback on image classifications while the AI system learns incrementally from this feedback. The cognitive workload for humans increases as more parallel data streams are presented, affecting their ability to provide accurate feedback." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Professional_Care_Planning> a hi:Scenario ;
+    rdfs:label "Professional Care Planning" ;
+    dcterms:description "A hybrid intelligence system called ViKI pro that uses AI-based clinical decision support with a human-in-the-loop component to assist nursing staff in planning appropriate care interventions for patients. The system analyzes patient data through federated learning across healthcare facilities and suggests relevant care measures for mobility and pain management, which nurses can evaluate and incorporate into care plans." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation> a hi:Scenario ;
+    rdfs:label "Roomba Navigation" ;
+    dcterms:description "A Roomba robot utilizes a Reinforcement Learning core with two attached sensors to navigate throughout an office space. This scenario demonstrates the application of the EASY-AI framework for visualizing and formalizing the components and interactions of an AI-enhanced robotic system." .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification> a hi:Scenario ;
+    rdfs:label "Trust Verification" ;
+    dcterms:description "A scenario focused on establishing and verifying trust in multiagent systems where human and AI agents collaborate. The approach emphasizes the modeling of an agent's capacity to deliver tasks, considering the specific setting in which agents interact rather than relying solely on reputation or statistical analysis of past behavior." .
+
+ns1:_scenario_Intelligent_Tutoring_System a hi:Scenario ;
+    rdfs:label "Intelligent Tutoring System" ;
+    dcterms:description "A scenario where an AI tutor agent is trained using reinforcement learning by interacting with user simulators (language models acting as simulated users) before transferring to interactions with real human users for question-answering assistance." ;
+    dcterms:subject dbr:Tutor,
+        dbr:Tutoring,
+        conceptnet:tutor,
+        conceptnet:tutoring .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/arxiv/_scenario_Hybrid_Prediction_Market> a hi:Scenario ;
+    rdfs:label "Hybrid Prediction Market" ;
+    dcterms:description "A market-based system where human participants and AI agents (bot traders) collaborate to predict the replicability of published scientific studies by buying and selling contracts representing replication outcomes." .
+
+hi:Interaction a owl:Class .
+
+hi:ProcessingTask a owl:Class .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_User> a hi:Human ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Explainable_Social_Robots>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Music_Co-Performance>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Roomba_Navigation> .
+
+hi:Actor a owl:Class .
+
+hi:InteractionMethod a owl:Class .
+
+hi:Capability a owl:Class .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Human_Annotator> a hi:Human ;
+    dcterms:subject dbr:Annotate,
+        dbr:Annotating,
+        conceptnet:annotate,
+        conceptnet:annotating,
+        conceptnet:annotationist,
+        conceptnet:annotator ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Argument_Extraction>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Interactive_Online_ML> .
+
+<https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_actor_Artificial_Agent> a hi:ArtificialAgent ;
+    dcterms:subject dbr:Artificial_person,
+        dbr:Intelligent_agent,
+        conceptnet:artificial_person,
+        conceptnet:intelligent_agent ;
+    hi:inScenario <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Collaborative_Game_Play>,
+        <https://github.com/EliasLiinamaa/kgst_project_group_3/10.3233/_scenario_Trust_Verification> .
+
+ns1:Other rdfs:subClassOf hi:ProcessingMethod .
+
+hi:hasInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Interaction .
+
+ns1:HybridIntelligenceAcademicArticle rdfs:subClassOf bibo:AcademicArticle .
+
+ns1:Symbolic rdfs:subClassOf hi:ProcessingMethod .
+
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+ns1:Neuro-symbolic rdfs:subClassOf hi:ProcessingMethod .
+
+hi:Scenario a owl:Class .
+
+ns1:QuantitativeMetric rdfs:subClassOf ns1:Metric .
+
+ns1:QualitativeMetric rdfs:subClassOf ns1:Metric .
+
+ns1:Statistical rdfs:subClassOf hi:ProcessingMethod .
+
+hi:InformationProcessing a owl:Class .
+
+hi:processingInformation a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InformationProcessing .
+
+hi:ProcessingMethod a owl:Class .
+
